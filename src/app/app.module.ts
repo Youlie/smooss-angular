@@ -11,6 +11,7 @@ import { EventManagerComponent } from './event-manager/event-manager.component';
 import { EventDetailComponent } from './event-detail/event-detail.component';
 import { EventEditorComponent } from './event-editor/event-editor.component';
 import { EventPreviewComponent } from './event-preview/event-preview.component';
+import { ListComponent } from './list/list.component';
 
 
 const appRoutes:Routes = [
@@ -33,7 +34,8 @@ const appRoutes:Routes = [
     EventManagerComponent,
     EventDetailComponent,
     EventEditorComponent,
-    EventPreviewComponent
+    EventPreviewComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
