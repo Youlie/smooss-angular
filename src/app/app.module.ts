@@ -11,6 +11,8 @@ import { EventManagerComponent } from './event-manager/event-manager.component';
 import { EventDetailComponent } from './event-detail/event-detail.component';
 import { EventEditorComponent } from './event-editor/event-editor.component';
 import { EventPreviewComponent } from './event-preview/event-preview.component';
+import { LogoutComponent } from './logout/logout.component';
+import { HomeRedirectComponent } from './home-redirect/home-redirect.component';
 
 
 const appRoutes:Routes = [
@@ -33,7 +35,9 @@ const appRoutes:Routes = [
     EventManagerComponent,
     EventDetailComponent,
     EventEditorComponent,
-    EventPreviewComponent
+    EventPreviewComponent,
+    LogoutComponent,
+    HomeRedirectComponent
   ],
   imports: [
     BrowserModule,

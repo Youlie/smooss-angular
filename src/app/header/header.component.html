@@ -1,3 +1,21 @@
-<p>
-  header works!
-</p>
+<div *ngIf="this.router.url === '/welcome'"> 
+  Header Index
+</div>
+
+<div *ngIf="this.router.url === '/connexion' || 
+            this.router.url === '/registration' ">
+  Header Connexion / Inscription
+</div>
+
+<div *ngIf="this.router.url === '/home'">
+  <app-logout></app-logout>
+</div>
+
+<div *ngIf="this.router.url === '/profile' ||
+            this.router.url === '/events'  ||
+            this.router.url === '/event/*' 
+      ">
+  <app-logout></app-logout>
+  <app-home-redirect></app-home-redirect>
+  Header Modif / Crea / Event / Liste D'évent / profil
+</div>
