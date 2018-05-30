@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes} from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -11,9 +12,11 @@ import { EventManagerComponent } from './event-manager/event-manager.component';
 import { EventDetailComponent } from './event-detail/event-detail.component';
 import { EventEditorComponent } from './event-editor/event-editor.component';
 import { EventPreviewComponent } from './event-preview/event-preview.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 
 const appRoutes:Routes = [
+  { path:"registration", component:RegistrationComponent },
   { path:"home", component:HomeComponent },
   { path:"profile", component:ProfileComponent },
   { path:"events", component:EventManagerComponent },
@@ -33,10 +36,12 @@ const appRoutes:Routes = [
     EventManagerComponent,
     EventDetailComponent,
     EventEditorComponent,
-    EventPreviewComponent
+    EventPreviewComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],
